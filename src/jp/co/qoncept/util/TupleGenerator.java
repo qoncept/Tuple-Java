@@ -292,19 +292,19 @@ public class TupleGenerator {
 	private static void writeType(BufferedWriter writer, int i)
 			throws IOException {
 		writer.write("T");
-		writer.write(Integer.toString(i + 1));
+		writer.write(Integer.toString(i));
 	}
 
 	private static void writeValue(BufferedWriter writer, int i)
 			throws IOException {
 		writer.write("value");
-		writer.write(Integer.toString(i + 1));
+		writer.write(Integer.toString(i));
 	}
 
 	private static void writeGetter(BufferedWriter writer, int i)
 			throws IOException {
 		writer.write("get");
-		writer.write(Integer.toString(i + 1));
+		writer.write(Integer.toString(i));
 	}
 
 	private static void writeIndentation(BufferedWriter writer, int indentation)

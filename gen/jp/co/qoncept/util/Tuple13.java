@@ -1,6 +1,7 @@
 package jp.co.qoncept.util;
 
-public class Tuple13<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13> {
+public class Tuple13<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12> {
+	private final T0 value0;
 	private final T1 value1;
 	private final T2 value2;
 	private final T3 value3;
@@ -13,9 +14,9 @@ public class Tuple13<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13> {
 	private final T10 value10;
 	private final T11 value11;
 	private final T12 value12;
-	private final T13 value13;
 
-	public Tuple13(T1 value1, T2 value2, T3 value3, T4 value4, T5 value5, T6 value6, T7 value7, T8 value8, T9 value9, T10 value10, T11 value11, T12 value12, T13 value13) {
+	public Tuple13(T0 value0, T1 value1, T2 value2, T3 value3, T4 value4, T5 value5, T6 value6, T7 value7, T8 value8, T9 value9, T10 value10, T11 value11, T12 value12) {
+		this.value0 = value0;
 		this.value1 = value1;
 		this.value2 = value2;
 		this.value3 = value3;
@@ -28,7 +29,10 @@ public class Tuple13<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13> {
 		this.value10 = value10;
 		this.value11 = value11;
 		this.value12 = value12;
-		this.value13 = value13;
+	}
+
+	public T0 get0() {
+		return value0;
 	}
 
 	public T1 get1() {
@@ -77,9 +81,5 @@ public class Tuple13<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13> {
 
 	public T12 get12() {
 		return value12;
-	}
-
-	public T13 get13() {
-		return value13;
 	}
 }

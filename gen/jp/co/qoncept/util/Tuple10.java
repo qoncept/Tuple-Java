@@ -1,6 +1,7 @@
 package jp.co.qoncept.util;
 
-public class Tuple10<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10> {
+public class Tuple10<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9> {
+	private final T0 value0;
 	private final T1 value1;
 	private final T2 value2;
 	private final T3 value3;
@@ -10,9 +11,9 @@ public class Tuple10<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10> {
 	private final T7 value7;
 	private final T8 value8;
 	private final T9 value9;
-	private final T10 value10;
 
-	public Tuple10(T1 value1, T2 value2, T3 value3, T4 value4, T5 value5, T6 value6, T7 value7, T8 value8, T9 value9, T10 value10) {
+	public Tuple10(T0 value0, T1 value1, T2 value2, T3 value3, T4 value4, T5 value5, T6 value6, T7 value7, T8 value8, T9 value9) {
+		this.value0 = value0;
 		this.value1 = value1;
 		this.value2 = value2;
 		this.value3 = value3;
@@ -22,7 +23,10 @@ public class Tuple10<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10> {
 		this.value7 = value7;
 		this.value8 = value8;
 		this.value9 = value9;
-		this.value10 = value10;
+	}
+
+	public T0 get0() {
+		return value0;
 	}
 
 	public T1 get1() {
@@ -59,9 +63,5 @@ public class Tuple10<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10> {
 
 	public T9 get9() {
 		return value9;
-	}
-
-	public T10 get10() {
-		return value10;
 	}
 }
